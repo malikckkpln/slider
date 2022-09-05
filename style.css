@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300;1,400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: 0.2s ease;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+/* HEADER */
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.header .logo img {
+  width: 100%;
+  max-width: 100px;
+  z-index: 999;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 100px;
+  transition: all ease 0.5s;
+  z-index: 99999;
+}
+
+.header .navbar a {
+  display: inline-block;
+  margin: 0 15px;
+  color: white;
+  transition: all ease 0.5s;
+}
+
+.header:hover{
+  background-color: white;
+}
+
+.header:hover a{
+  color: black ;
+}
+
+
+/* SLIDER */
+
+.content{
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.content .item{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: all ease 0.5s;
+}
+
+.content .item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.content .item:hover{
+  width: 200%;
+}
+
+.content .item .text{
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 100%;
+  height: 100%;
+  padding: 50px 50px 100px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0;
+  transition: all ease 0.5s 0.2s;
+}
+
+.content .item:hover .text{
+  opacity: 1;
+  bottom: 0;
+}
+
+.content .item .text h3 {
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.content .item .text a {
+  color: white;
+  font-size: 18px;
+}
+
+.content .item .text a span{
+  font-size: 20px;
+  display: inline-block;
+  transition: all ease 2s;
+}
+
+.content .item .text a:hover span{
+  transform: rotate(360deg);
+}
+
+
+
+
